@@ -167,3 +167,6 @@ def calculate():
 
     except Exception as e:
         return f"Error: {str(e)}", 400
+
+
+# IMPORTANT: Remove app.run() for Vercel
