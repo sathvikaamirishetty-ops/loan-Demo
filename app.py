@@ -49,7 +49,7 @@ def send_otp():
     # Only print to Vercel logs (NO file writing)
     print(f"\n{'='*30}\nSIMULATED SMS to {mobile}: Your OTP is {otp}\n{'='*30}\n")
 
-
+    return render_template("verify.html", mobile=mobile)
 
 
 @app.route("/verify-otp", methods=["POST"])
